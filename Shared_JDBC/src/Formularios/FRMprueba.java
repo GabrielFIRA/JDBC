@@ -29,41 +29,53 @@ public class FRMprueba extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        BTNok = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        BTNok.setText("OK");
-        BTNok.addActionListener(new java.awt.event.ActionListener() {
+        jPanel1.setLayout(null);
+
+        jButton1.setBackground(new java.awt.Color(0, 204, 204));
+        jButton1.setFont(new java.awt.Font("Nirmala UI", 3, 12)); // NOI18N
+        jButton1.setText("OK");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BTNokActionPerformed(evt);
+                jButton1ActionPerformed(evt);
             }
         });
+        jPanel1.add(jButton1);
+        jButton1.setBounds(290, 110, 80, 70);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Test_Image.jpg"))); // NOI18N
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(0, -10, 680, 290);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(115, 115, 115)
-                .addComponent(BTNok, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(143, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 681, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(101, 101, 101)
-                .addComponent(BTNok, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(101, Short.MAX_VALUE))
+                .addGap(21, 21, 21)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 293, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(28, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void BTNokActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTNokActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(null, "ok");
-    }//GEN-LAST:event_BTNokActionPerformed
+        JOptionPane.showMessageDialog(null, "OK","OK",JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -101,6 +113,8 @@ public class FRMprueba extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton BTNok;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
