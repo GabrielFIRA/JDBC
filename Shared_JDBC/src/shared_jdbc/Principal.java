@@ -5,6 +5,8 @@
  */
 package shared_jdbc;
 
+import Formularios.FRMprueba;
+
 /**
  *
  * @author DELL
@@ -16,6 +18,8 @@ public class Principal {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        FRMprueba frm = new FRMprueba();
+        frm.setVisible(true);
     }
     
 }
